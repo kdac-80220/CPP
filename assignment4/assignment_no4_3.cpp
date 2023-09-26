@@ -207,6 +207,24 @@ class matrixAddition{
             cout<<endl;
         }
     }
+
+    ~matrixAddition()
+    {
+        for(int i=0;i<r;i++)
+        {
+            delete[] mat1[i];
+            delete[] mat2[i];
+            delete[] result[i];
+        }
+        delete[] *mat1;
+        delete[] *mat2;
+        delete[] *result;
+        delete[] mat1;
+        delete[] mat2;
+        delete[] result;
+        
+        
+    }
 };
 
  
