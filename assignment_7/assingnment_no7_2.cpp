@@ -14,6 +14,7 @@ class Books: public Sales
         string author;
         string book_title;
         double book_price;
+        double discount=0.5;
     public:
     void acceptData()
     {
@@ -25,6 +26,7 @@ class Books: public Sales
         cin>>this->book_title;
         cout<<"Enter Book Price: "<<endl;
         cin>>this->book_price;
+        setPriceAfterDiscount();
     }
     void displayData()
     {
@@ -33,7 +35,10 @@ class Books: public Sales
         cout<<"Book Title:"<<this->book_title<<endl;
         cout<<"Book Price:"<<this->book_price<<endl;
     }
-
+    void setPriceAfterDiscount()
+    {
+        this->book_price=this->book_price*0.90;
+    }
     double getPrice()
     {
         return this->book_price;
@@ -58,6 +63,7 @@ class Tapes: public Sales
         cin>>this->tape_title;
         cout<<"Enter Tape Price: "<<endl;
         cin>>this->tape_price;
+        setPriceAfterDiscount();
     }
     void displayData()
     {
@@ -66,7 +72,10 @@ class Tapes: public Sales
         cout<<"Tape Title:"<<this->tape_title<<endl;
         cout<<"Tape Price:"<<this->tape_price<<endl;
     }
-
+    void setPriceAfterDiscount()
+    {
+        this->tape_price=this->tape_price*0.95;
+    }
     double getPrice()
     {
         return this->tape_price;
