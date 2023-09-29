@@ -175,12 +175,12 @@ class Sales_manager:public Salesman,public Manager{
 };
 int main()
 {
-    // Sales_manager s;
-    // s.accept();
-    // s.display();
-     Sales_manager s(10,15000,500,200);
-     s.display();
-    // Salesman s;
+    Sales_manager s;
+     s.accept();
+    s.display();
+     //Sales_manager s(10,15000,500,200);
+     //s.display();
+    //  Salesman s;
     // s.accept();
     // s.display();
     return 0;

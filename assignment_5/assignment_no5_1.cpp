@@ -38,7 +38,10 @@ public:
         cout<<"Percentage: "<<this->percentage<<endl;
     }
 };
+int search()
+{
 
+}
 int Student::rollno=100;
 int main()
 {
