@@ -234,5 +234,12 @@ int main()
             break;
         }
     }
+    
+    delete[] e;
+    
+        
+    
+    
+
     return 0;
 }
